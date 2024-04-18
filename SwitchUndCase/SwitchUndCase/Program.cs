@@ -1,5 +1,8 @@
 ﻿using System;
-
+/**
+ * Switch Case = ist wie ein schalter der meherer position durchläuft, 
+ * wenn einer dieser position eine bedingung erfüllt, wird der code an der position ausgeführt
+ * */
 namespace SwitchUndCase
 {
     class Program
@@ -19,11 +22,14 @@ namespace SwitchUndCase
                 case 25:
                     Console.WriteLine("Alles klar, abgehts");
                     break;
-                // wie Else bei einer If Bedingung
-                default:
+                
+                default:// wie Else bei einer If Bedingung
                     Console.WriteLine("Wie alt bist du eigentlich?");
                     break;
             }
+
+            //---------------------------------------------------------
+            // genau das gleiche nur mit IF- Else
 
             if (age == 15)
             {
@@ -48,9 +54,9 @@ namespace SwitchUndCase
                 case "root":
                     Console.WriteLine("Benutzername ist root");
                     break;
-                default:
+                default:    // default trit bei einer fehlereingabe ein
                     Console.WriteLine("Benutzername unbekannt");
-                    break;
+                    break;  // mit break wird das programm beendet
             }
 
 
