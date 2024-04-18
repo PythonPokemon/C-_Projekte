@@ -38,7 +38,13 @@ namespace ErweiterteIfStatements
             // in Kurzversion
             stateOfMatter = temperature < 0 ? "fest" : "flüssig";
             Console.WriteLine("Aggregatszustand ist {0}", stateOfMatter);
+
+            // hier ist die Temperatur 100
             temperature += 100;
+            // doppelpunkt :    | soll oder darstelle, was nach dem doppelpunkt steht
+            // fragezeichen ?   | ist wie, ist gleich = zu verstehen bsp.temperature > 100 ? "gas"
+            // es wird geprüft ob die temp. größer gleich 100 ist wenn dann wird mit fragezeichen? = gas angezeigt
+            // oder doppelpunkt : es wird geprüft ob die temp kleiner 0 ist = fest : ansonsten flüssig
             stateOfMatter = temperature > 100 ? "gas" : (temperature < 0 ? "fest" : "flüssig");
             Console.WriteLine("Aggregatszustand ist {0}", stateOfMatter);
 
