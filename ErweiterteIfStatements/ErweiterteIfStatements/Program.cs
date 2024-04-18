@@ -8,8 +8,8 @@ namespace ErweiterteIfStatements
         // Bedingung muss entweder wahr oder falsch sein (true /false)
         // Der konditionelle Operator ist rechtdassociativ
         // Der Audruck a ? b : c ? d: e
-        // wird so evaluiert a ? b : (c ? d : e),
-        // und nicht als (a ? b : c) ? d : e.
+        // wird so evaluiert a ? b : (c ? d : e),   = wäre richtig
+        // und nicht als (a ? b : c) ? d : e.       = wäre falsch
         // Der Kontionelle operator kann nicht überschrieben werden.
 
         static void Main(string[] args)
