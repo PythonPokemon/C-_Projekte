@@ -20,9 +20,10 @@ namespace ErsteKlasse
         string eyeColor;
         int age;
 
-
+// public | ist ein zurgriffs-modifizierer der besagt ob die klasse öffentlich oder privat sein soll
+        
         // Default Konstruktor
-        public Human()
+        public Human() 
         {
             Console.WriteLine("Default Konstruktor aufgerufen");
             age = 0;
@@ -34,7 +35,7 @@ namespace ErsteKlasse
         // Parameterisierter Konstruktor
         public Human(string firstname, string lastname, string eyeColor, int age)
         {
-            this.firstname = firstname;
+            this.firstname = firstname; // mit| this.bezeichner = bezeichner |sagt man das die variable string aus dem konstruktotr, eine member variable aus der klasse human sein soll!
             this.lastname = lastname;
             this.eyeColor = eyeColor;
             this.age = age;
