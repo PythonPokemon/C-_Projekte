@@ -6,27 +6,29 @@ namespace DoWhileSchleife
     {
         static void Main(string[] args)
         {
-            int lengthOfText = 0;
-            string wholeText = "";
+            int längeText = 0;
+            string leererText = "";
+            // es wird geprüft ob die länge des Textes alsoder Name der Freunde der angegebn wird
+            // oder der wert noch insgesamt kleiner 20 ist, sobald es die 20 erreicht endet die schleife
             do
             {
                 Console.WriteLine("Bitte trage den Namen eines Freundes ein");
-                string nameOfAFriend = Console.ReadLine();
-                int currentLength = nameOfAFriend.Length;
-                lengthOfText += currentLength;
-                wholeText += nameOfAFriend;
-            } while (lengthOfText < 20);
-            Console.WriteLine("Danke, das reicht! Deine Freunde sind {0}", wholeText);
+                string nameFreund = Console.ReadLine();
+                int aktuelleLänge = nameFreund.Length;
+                längeText += aktuelleLänge;
+                leererText += nameFreund;
+            } while (längeText < 20);
+            Console.WriteLine("Danke, das reicht! Deine Freunde sind {0}", leererText);
 
-            // 1. Zählervariable anlegen
-            int counter = 25;
+            // Übungsschleife: addirt von 0 plus +1 bis 10.000 
+            Console.WriteLine("\nÜbungsschleife:");
+            int counter = 0;
+
             do
             {
                 Console.WriteLine(counter);
-                // 3. Dafür sorgen, dass Bedingung irgendwann nicht mehr erfüllt ist. 
                 counter++;
-                // 2. Bedingung einfügen
-            } while (counter < 5);
+            } while (counter < 10000);
 
             Console.Read();
         }
