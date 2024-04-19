@@ -1,5 +1,9 @@
 ﻿using System;
 
+/**
+ * man kann einfach eine schleife nach der anderen untereinander platzieren
+ */
+
 namespace DoWhileSchleife
 {
     class Program
