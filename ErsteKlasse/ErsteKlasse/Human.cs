@@ -22,7 +22,8 @@ namespace ErsteKlasse
 
 // public | ist ein zurgriffs-modifizierer der besagt ob die klasse öffentlich oder privat sein soll
         
-        // Default Konstruktor
+        // Default Konstruktor = als standart vorlage, wenn man sonst keine info hat
+        // evtl. nützlich als standart vererbungsvorlage
         public Human() 
         {
             Console.WriteLine("Default Konstruktor aufgerufen");
