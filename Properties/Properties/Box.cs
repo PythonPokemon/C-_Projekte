@@ -79,12 +79,12 @@ namespace Properties
         }
         */
         /*
-        public void SetLength(int length)
+        public void SetLength(int length) | hier wird die variable lenght öffentlich gesetzt
         {
             this.length = length;
         }
 
-        public int GetLength()
+        public int GetLength() | gibt den Wert von lenght zurück
         {
             return this.length;
         }
@@ -102,7 +102,7 @@ namespace Properties
         public void DisplayInfo()
         {
             Console.WriteLine("Länge ist {0} und Höhe ist {1} und Breite ist {2} somit ist das Volumen {3}",
-                length, Height, width, volume = length * Height * width);
+                length, Height, width, volume = length * Height * width); // kalkulation direkt in der konsole
         }
 
 
