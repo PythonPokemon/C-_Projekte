@@ -44,13 +44,13 @@ namespace MembersDestruktoren
 
         }
 
-        // private member Method
+        // private member Method | lässt sich sich von anderen klassen aus aufrufen
         private void SharingPrivateInfo()
         {
             Console.WriteLine("Mein Gehalt ist {0}", salary);
         }
 
-        // member constructor - Default Constructor
+        // member constructor - Default Constructor | ist so wie eine  standart schablone
         public Members()
         {
             age = 30;
@@ -60,7 +60,7 @@ namespace MembersDestruktoren
             Console.WriteLine("Objekt erzeugt");
         }
 
-        // Member - Finalizer - Destructor
+        // Member - Finalizer - Destructor | wird verwendet um das Objekt zu löschen
         ~Members()
         {
             // Aufräumarbeiten
