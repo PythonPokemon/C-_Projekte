@@ -11,27 +11,27 @@ namespace Operatoren
             int num3;
 
             // unäre Operatoren
-            num3 = -num1; // bedeutet die ganzzahl num3 wird als num1 deklariert aber negiert, bedeutet ins minus gesetzt = -5
+            num3 = -num1; // bedeutet, die Ganzzahl num3 wird auf -num1 gesetzt, also -5
             Console.WriteLine("num3 ist {0}", num3);
 
             bool isSunny = true;
-            Console.WriteLine("ist es sonnig? {0}", !isSunny); // der bezeichner isSunny wird mit ! ausrufezeichen vor dem string negiert = bedeutet False
+            Console.WriteLine("ist es sonnig? {0}", !isSunny); // Der boolesche Wert von isSunny wird negiert = false
 
             // Inkrementoperatoren
             int num = 0;
-            num++;  // afix++ bedeutet addition +1
-            Console.WriteLine("num ist {0}", num); // 0
-            Console.WriteLine("num ist {0}", num++); // konsolenausgabe +1
+            num++;  // postfix++ bedeutet: Erst Ausgabe, dann +1
+            Console.WriteLine("num ist {0}", num); // Ausgabe: 1
+            Console.WriteLine("num ist {0}", num++); // Ausgabe: 1, danach num = 2
             // pre increment
-            Console.WriteLine("num ist {0}", ++num);    // ++präfix bedeutet addition +1 = 3
+            Console.WriteLine("num ist {0}", ++num); // Ausgabe: 3 (erst Inkrementierung, dann Ausgabe)
 
             // decrement Operator
             num--;
-            Console.WriteLine("num ist {0}", num); // 3 -1 = 2
-            Console.WriteLine("num ist {0}", num--); // 2 -1 = 1 wird aber nur zwischen gespeichert
+            Console.WriteLine("num ist {0}", num); // Ausgabe: 2 (postfix--, erst Ausgabe, dann -1)
+            Console.WriteLine("num ist {0}", num--); // Ausgabe: 2, danach num = 1
 
             // pre decrement
-            Console.WriteLine("num ist {0}", --num); // 1 -1 = 0 | bezieht sich ab das zwischgespeicherte ergebnis 1
+            Console.WriteLine("num ist {0}", --num); // Ausgabe: 0 (erst Dekrementierung, dann Ausgabe)
 
             int result;
             // Addition
@@ -52,24 +52,24 @@ namespace Operatoren
 
             // Relationale und Typoperatoren
             bool isLower;
-            isLower = num1 < num2; // Boolena ist ein wahrheitswert es wird geprüft ob 5 kleiner 3 ist = False
+            isLower = num1 < num2; // Es wird geprüft, ob num1 (5) kleiner als num2 (3) ist = false
             Console.WriteLine("Ergebnis von num1:{0} < num2:{1} ist {2}", num1, num2, isLower);
 
             // Gleichheit
             bool isEqual;
-            isEqual = num1 == num2; // ob 5 gleich 3 ist = False
+            isEqual = num1 == num2; // Prüft, ob num1 gleich num2 ist = false
             Console.WriteLine("Ergebnis von num1:{0} == num2:{1} ist {2}", num1, num2, isEqual);
 
-            isEqual = num1 != num2; // ob 5 ungliech 3 ist = True
+            isEqual = num1 != num2; // Prüft, ob num1 ungleich num2 ist = true
             Console.WriteLine("Ergebnis von num1:{0} != num2:{1} ist {2}", num1, num2, isEqual);
 
             // Konditionelle Operatoren
             bool isLowerAndSunny;
             // Kondition1 UND Kondition2
-            isLowerAndSunny = isLower && isSunny; // UND | bedeutet beide müssen True sein
+            isLowerAndSunny = isLower && isSunny; // Beide müssen true sein, um true zu ergeben
             Console.WriteLine("Ergebnis von num1:{0} && num2:{1} ist {2}", num1, num2, isLowerAndSunny);
             // Kondition1 ODER Kondition2
-            isLowerAndSunny = isLower || isSunny; // ODER | vergleich eins von den werten muss True sein
+            isLowerAndSunny = isLower || isSunny; // Mindestens eine Kondition muss true sein
             Console.WriteLine("Ergebnis von num1:{0} || num2:{1} ist {2}", num1, num2, isLowerAndSunny);
 
             Console.ReadKey();
