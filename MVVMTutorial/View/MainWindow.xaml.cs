@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MVVMTutorial
+namespace MVVMTutorial.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -19,6 +19,8 @@ namespace MVVMTutorial
         public MainWindow()
         {
             InitializeComponent();
+            //DataContext = new ViewModel.MainViewModel();   | So könnte man den Datenkontext auch setzen!
         }
+
     }
 }

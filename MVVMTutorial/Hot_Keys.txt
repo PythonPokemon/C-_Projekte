@@ -1,0 +1,7 @@
+﻿Hot Key:
+
+Strg + F12	== Sucht direkt Property
+F5			== Code ausführen
+Strg + C	== Copy
+Strg + V	== paste
+Strg + S	== save

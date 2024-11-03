@@ -1,0 +1,43 @@
+﻿einfaches text dokument
+
+Wissen zu MVVM Architektur.
+
+
+
+					<--------				<--------
+Model					|		ViewModel		|		View
+-----------------------------------------------------------------
+						|						|
+enthält alle Daten		|	Anwendungslogik		|	UI, visuelle
+						|	Geschäftslogik		|	Darstellung des ViewModels
+						|	(bekommt Daten)		|
+						|		von Model		|
+					-------->				-------->
+				Informationen			Informationen
+
+--------------------------------------------------------------------------------------------------
+
+View:
+Die xaml WPF Designer Datei in der man das Layout GUI Modeliert.
+Bekommt ihre Informationen von 'ViewModel'
+
+ViewModel:
+Ehemalig auch 'CodeBehind' Datei gewesen/genannt, enthält die Geschäftslogik / Anwendungslogik
+und bezieht ihre daten, wiederum aus dem 'Model'
+
+Model:
+Ist im Prinziep die Datei wo Alle klassen & Variablen Enthalten sind
+
+--------------------------------------------------------------------------------------------------
+
+Abhängigkeiten:
+Alle sind voneinander total unabhängig!
+Sodass im Team jeder unabhängig von einander an bestimmen Elementen arbeiten kann.
+
+----------------------------------------------------------------------------------------------------
+Warum string.Empty statt null?
+In vielen Szenarien ist es besser, eine Zeichenkette mit string.Empty zu initialisieren, anstatt sie null zu lassen. 
+Das liegt daran, dass eine null-Zeichenkette zu Fehlern führen kann, wenn man versucht, 
+sie zu verwenden (z. B. wenn man ihre Länge abfragt oder sie in eine andere Zeichenkette einfügt).
+string.Empty bedeutet, dass die Zeichenkette leer, aber nicht null ist, was sicherer ist, 
+besonders in Benutzeroberflächen- oder Datenbindungsszenarien.
